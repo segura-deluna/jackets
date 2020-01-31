@@ -1,0 +1,83 @@
+//main: main.scss
+@media (max-width: 1240px) {
+	.container {
+		padding: 0 15px;
+	}
+}
+
+@media (max-width: 1040px) {
+	.header__wrap {
+		flex-wrap: wrap;
+	}
+
+	.header__contacts {
+		margin: 0 auto 30px;
+		max-width: 700px;
+	}
+
+	.header__search {
+		max-width: 700px;
+		margin: 0 auto;
+	}
+}
+
+
+@media (max-width: 960px) {
+	.header-nav {
+		display: none;
+		background-color: #fff;
+		text-align: center;
+
+		& a {
+			width: 100%;
+			margin: 10px auto;
+		}
+
+		&.show {
+			display: flex;
+			flex-wrap: wrap;
+			position: absolute;
+			z-index: 10;
+		}
+	}
+
+	.header-menu {
+		display: block;
+	}
+}
+
+
+@media (max-width: 638px) {
+	.slider-new {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.header__search-input {
+		margin-left: 10px;
+
+		& input {
+			width: 250px;
+		}
+	}
+}
+
+
+@media (max-width: 550px) {
+	.header__contacts {
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.slider-news h2 {
+		margin: 0 0 50px 30%;
+	}
+}
+
+
+@media (max-width: 480px) {
+	.slider-news h2 {
+		margin: 0 auto 40px;
+	}
+
+}

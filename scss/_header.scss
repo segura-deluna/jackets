@@ -76,12 +76,12 @@
 
 .header__search {
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-around;
 	align-items: center;
 }
 
 .header__search-input {
-	margin-right: 40px;
+	margin-left: 30px;
 	position: relative;
 
 	& img {
@@ -112,7 +112,7 @@
 .header__bookmarks {
 	width: 30px;
 	height: 30px;
-	margin-right: 25px;
+	margin-left: 30px;
 
 	& img {
 		width: 100%;
@@ -122,10 +122,15 @@
 .header__cart {
 	width: 30px;
 	height: 30px;
+	margin-left: 25px;
 
 	& img {
 		width: 100%;
 	}
+}
+
+.header-menu {
+	display: none;
 }
 
 .header-nav {

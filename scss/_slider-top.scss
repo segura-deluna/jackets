@@ -22,24 +22,24 @@
 
 	& h1 {
 		font-family: 'Oswald', sans-serif;
-		font-size: 70px;
+		font-size: 75px;
 		font-weight: 700;
 		line-height: 86px;
 		text-transform: uppercase;
-		margin: 0 0 40px;
+		margin: 0 0 30px;
 	}
 
 	& p {
 		font-family: 'Montserrat', sans-serif;
 		font-weight: 300;
 		font-size: 25px;
-		margin-bottom: 30px;
+		margin-bottom: 15px;
 	}
 
 	& span {
 		font-family: 'Montserrat', sans-serif;
 		font-weight: 700;
-		font-size: 60px;
+		font-size: 80px;
 		color: $red-link;
 	}
 
@@ -48,13 +48,12 @@
 }
 
 .slider-top__link {
-	margin: 50px auto;
+	margin: 30px auto;
 	display: block;
 	width: 160px;
 	height: 50px;
 	border: 1px dashed $black;
 	padding: 12px 20px;
-	align-items: center;
 
 	& a {
 		font-family: 'Montserrat', sans-serif;
