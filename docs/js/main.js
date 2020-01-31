@@ -15,8 +15,7 @@ $(document).ready(function () {
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
-					infinite: true,
-					dots: true
+					infinite: true
 				}
 			},
 			{
@@ -52,9 +51,17 @@ $(document).ready(function () {
 		speed: 1e3,
 		arrows: false,
 		responsive: [{
-				breakpoint: 1024,
+				breakpoint: 1224,
 				settings: {
-					slidesToShow: 7,
+					slidesToShow: 6,
+					slidesToScroll: 1,
+					infinite: true,
+				}
+			},
+			{
+				breakpoint: 1084,
+				settings: {
+					slidesToShow: 4,
 					slidesToScroll: 1,
 					infinite: true,
 				}
@@ -62,21 +69,28 @@ $(document).ready(function () {
 			{
 				breakpoint: 680,
 				settings: {
-					slidesToShow: 7,
+					slidesToShow: 3,
 					slidesToScroll: 1
 				}
 			},
 			{
 				breakpoint: 600,
 				settings: {
-					slidesToShow: 5,
+					slidesToShow: 3,
 					slidesToScroll: 1
 				}
 			},
 			{
-				breakpoint: 480,
+				breakpoint: 530,
 				settings: {
 					slidesToShow: 2,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 370,
+				settings: {
+					slidesToShow: 1,
 					slidesToScroll: 1
 				}
 			}
@@ -93,22 +107,22 @@ $(document).ready(function () {
 		prevArrow: '<div class="slider-new__prev slider-new__arrows" ><img src="./img/back.svg" alt=""></img></div>',
 		nextArrow: '<div class="slider-new__next slider-new__arrows" ><img src="./img/next.svg" alt=""></img></div>',
 		responsive: [{
-				breakpoint: 1024,
+				breakpoint: 1200,
 				settings: {
-					slidesToShow: 4,
+					slidesToShow: 3,
 					slidesToScroll: 1,
 					infinite: true,
 				}
 			},
 			{
-				breakpoint: 680,
+				breakpoint: 900,
 				settings: {
 					slidesToShow: 2,
 					slidesToScroll: 1
 				}
 			},
 			{
-				breakpoint: 600,
+				breakpoint: 639,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1
@@ -117,11 +131,21 @@ $(document).ready(function () {
 			{
 				breakpoint: 480,
 				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 1
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					arrows: false
 				}
 			}
 		]
+	});
+
+	// Mobile Nav
+	const navToggle = $('#navToggle');
+	const nav = $('#nav');
+
+	navToggle.on('click', function (event) {
+		event.preventDefault();
+		nav.toggleClass('show');
 	});
 
 });
