@@ -1,0 +1,37 @@
+// main: main.scss
+
+.descr {
+	width: 100%;
+	background-color: #f5f5f4;
+}
+
+.descr__wrap {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.descr__img {
+	width: 100%;
+}
+
+.descr__text {
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+	color: $descr;
+
+	& h2 {
+		font-weight: 400;
+		font-size: 25px;
+		margin: 80px 0 40px;
+	}
+
+	& p {
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 28px;
+		color: $descr-light;
+		margin-bottom: 40px;
+	}
+}

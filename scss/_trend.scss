@@ -2,13 +2,14 @@
 
 .trend {
 	position: relative;
-	margin-bottom: 60px;
 }
 
-.trend__armani {
+.trend__armani,
+.trend__militare {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 60px;
 }
 
 .trend__big {
@@ -31,11 +32,22 @@
 	}
 }
 
+.trend__big-text--militare h2 {
+	width: 400px;
+}
+
 .trend__small {
 	width: 100%;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-between;
 	margin-left: 10px;
+}
+
+.trend__militare {
+	& .trend__small {
+		margin-left: 0;
+		margin-right: 10px;
+	}
 }
 
 .trend__small-card {

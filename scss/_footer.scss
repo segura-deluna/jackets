@@ -1,1 +1,96 @@
 // main: main.scss
+
+.footer {
+	border-bottom: 1px solid $gray;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 40px 0 35px;
+
+	& a {
+		font-family: 'Montserrat',
+			sans-serif;
+		font-weight: 500;
+		font-size: 12px;
+		color: $red-link;
+		margin-top: 10px;
+	}
+}
+
+.footer__addr {
+	display: flex;
+	justify-content: space-between;
+	min-width: 255px;
+}
+
+.footer__call {
+	display: flex;
+	justify-content: space-between;
+	min-width: 145px;
+}
+
+.footer__mail {
+	display: flex;
+	justify-content: space-between;
+	min-width: 145px;
+}
+
+.footer__work {
+	display: flex;
+	justify-content: space-between;
+	min-width: 145px;
+}
+
+.footer__work-icon {
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+
+	& img {
+		width: 100%;
+	}
+}
+
+.footer__work-text {
+	font-family: 'Montserrat',
+		sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	color: $black;
+
+	& p {
+		margin-bottom: 10px;
+	}
+}
+
+.footer__social {
+	min-width: 125px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__copy {
+	max-width: 380px;
+	width: 100%;
+	padding: 30px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.footer__year {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	color: $descr;
+}
+
+.footer__police {
+	& a {
+		text-decoration: none;
+		font-family: 'Montserrat',
+			sans-serif;
+		font-size: 14px;
+		color: $descr;
+	}
+}

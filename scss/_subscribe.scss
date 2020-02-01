@@ -1,0 +1,36 @@
+// main: main.scss
+
+.subscribe {
+	position: relative;
+	height: auto;
+
+	& img {
+		width: 100%;
+	}
+}
+
+.subsribe__wrap {
+	width: 100%;
+	position: absolute;
+	top: -160px;
+}
+
+.subscribe__items {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	z-index: 5;
+}
+
+.subscribe__text {
+	color: #ffffff;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 26px;
+	line-height: 37px;
+	width: 560px;
+
+	& p {
+		font-size: 14px;
+	}
+}
