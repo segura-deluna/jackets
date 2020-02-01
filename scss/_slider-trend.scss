@@ -1,0 +1,13 @@
+// main: main.scss
+
+.slider-trend {
+
+	& h2 {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 30px;
+		font-weight: 400;
+		color: $black;
+		margin: 0 auto 50px;
+		width: 260px;
+	}
+}

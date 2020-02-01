@@ -1,0 +1,57 @@
+// main: main.scss
+
+.trend {
+	position: relative;
+	margin-bottom: 60px;
+}
+
+.trend__armani {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.trend__big {
+	position: relative;
+}
+
+.trend__big-text {
+	position: absolute;
+	left: 45px;
+	bottom: 50px;
+
+	& h2 {
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+		font-size: 55px;
+		text-transform: uppercase;
+		color: #ffffff;
+		width: 370px;
+		margin: 0;
+	}
+}
+
+.trend__small {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	margin-left: 10px;
+}
+
+.trend__small-card {
+	position: relative;
+	margin: 0 auto;
+	width: 290px;
+
+	& p {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 13px;
+		margin: 10px 0;
+	}
+
+	& span {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 16px;
+		font-weight: 700;
+	}
+}
