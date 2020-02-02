@@ -31,6 +31,18 @@
 }
 
 .subscribe__form {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+
+	& img {
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		top: 24px;
+		right: 75px;
+		z-index: 5;
+	}
 
 	& input {
 		width: 445px;
@@ -46,14 +58,25 @@
 	}
 }
 
-.subscribe__form-mail::after {
-	position: absolute;
-	content: "";
-	color: #ffffff;
-	width: 20px;
-	height: 20px;
-	background-image: url(../img/send.svg);
-	top: 45px;
-	right: 75px;
-	z-index: 5;
+.subscribe__form-police {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+
+	& input {
+		width: 10px;
+		height: 10px;
+	}
+
+	& label {
+		margin-left: 15px;
+	}
+
+	& a {
+		color: $dark-gray;
+		font-family: 'Montserrat', sans-serif;
+		text-decoration: none;
+		margin-bottom: 3px;
+	}
 }
