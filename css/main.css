@@ -198,6 +198,7 @@ a {
 }
 
 .header__cart {
+  position: relative;
   width: 30px;
   height: 30px;
   margin-left: 25px;
@@ -205,6 +206,22 @@ a {
 
 .header__cart img {
   width: 100%;
+}
+
+.counter {
+  position: absolute;
+  top: -2px;
+  right: -5px;
+  height: 18px;
+  border-radius: 9px;
+  padding: 0px 4px;
+  background-color: #ee064a;
+  color: #f4f4f4;
+  font-size: 14px;
+  line-height: 17px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  z-index: 3;
 }
 
 .header-menu {
