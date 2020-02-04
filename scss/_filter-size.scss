@@ -1,0 +1,89 @@
+// main: main.scss
+
+.filter-size {
+	& h1 {
+		font-family: 'Montserrat',
+			sans-serif;
+		font-weight: 500;
+		font-size: 30px;
+	}
+}
+
+.for-brand {
+	position: relative;
+	width: 275px;
+	height: 345px;
+	background-color: $brand-bg;
+	padding: 35px 15px 0 25px;
+}
+
+.for-brand__title {
+
+	& h3 {
+		font-family: 'Montserrat',
+			sans-serif;
+		font-weight: 500;
+		font-size: 17px;
+		color: $descr;
+		margin: 0;
+	}
+}
+
+.for-brand__list {
+	padding-left: 0;
+	overflow-y: scroll;
+}
+
+.check__brand {
+	position: relative;
+	margin: 16px 0;
+}
+
+.check__input {
+	appearance: none;
+	position: absolute;
+}
+
+.check__label {
+	font-family: 'Montserrat',
+		sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	color: $descr;
+	padding-left: 30px;
+
+	&::before {
+		content: "";
+		width: 23px;
+		height: 23px;
+		display: block;
+		border: 3px solid $bord-check;
+		border-radius: 4px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+
+	&::after {
+		content: "";
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		top: 5px;
+		left: 5px;
+		z-index: 2;
+		background: url('../img/confirm.svg') no-repeat;
+		background-size: 13px 13px;
+		opacity: 0;
+	}
+}
+
+.check__input:checked+.check__label::before {
+	background-color: $red-link;
+	border: 3px solid $red-link;
+}
+
+.check__input:checked+.check__label::after {
+	opacity: 1;
+}

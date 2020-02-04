@@ -3,8 +3,9 @@
 @import 'grid';
 @import 'vars';
 
-// Blocks
+// Blocks MAIN page
 @import 'header';
+
 @import 'burger';
 @import 'slider-top';
 @import 'slider-brand';
@@ -16,5 +17,12 @@
 @import 'subscribe';
 
 @import 'footer';
+
+// Blocks WOMAN page
+@import 'filter-size';
+
+
+
+
 
 @import 'media';

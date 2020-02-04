@@ -20,6 +20,10 @@ a {
   padding: 0;
 }
 
+li {
+  list-style-type: none;
+}
+
 .container {
   max-width: 1240px;
   margin: 0 auto;
@@ -885,6 +889,88 @@ a {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   color: #3d3d3d;
+}
+
+.filter-size h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.for-brand {
+  position: relative;
+  width: 275px;
+  height: 345px;
+  background-color: #f8f8f8;
+  padding: 35px 15px 0 25px;
+}
+
+.for-brand__title h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  color: #3d3d3d;
+  margin: 0;
+}
+
+.for-brand__list {
+  padding-left: 0;
+  overflow-y: scroll;
+}
+
+.check__brand {
+  position: relative;
+  margin: 16px 0;
+}
+
+.check__input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
+}
+
+.check__label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: #3d3d3d;
+  padding-left: 30px;
+}
+
+.check__label::before {
+  content: "";
+  width: 23px;
+  height: 23px;
+  display: block;
+  border: 3px solid #b1b1b1;
+  border-radius: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.check__label::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 2;
+  background: url("../img/confirm.svg") no-repeat;
+  background-size: 13px 13px;
+  opacity: 0;
+}
+
+.check__input:checked + .check__label::before {
+  background-color: #d44343;
+  border: 3px solid #d44343;
+}
+
+.check__input:checked + .check__label::after {
+  opacity: 1;
 }
 
 @media (max-width: 1240px) {
