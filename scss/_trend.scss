@@ -14,29 +14,31 @@
 
 .trend__big {
 	position: relative;
+	max-width: 620px;
+	width: 100%;
+
+	& img {
+		width: 100%;
+	}
 }
 
 .trend__big-text {
 	position: absolute;
-	left: 45px;
-	bottom: 50px;
+	left: 10%;
+	bottom: 10%;
 
 	& h2 {
 		font-family: 'Montserrat', sans-serif;
 		font-weight: 700;
-		font-size: 55px;
+		font-size: 3.3em;
 		text-transform: uppercase;
 		color: #ffffff;
-		width: 370px;
 		margin: 0;
 	}
 }
 
-.trend__big-text--militare h2 {
-	width: 400px;
-}
-
 .trend__small {
+	max-width: 620px;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
@@ -46,14 +48,19 @@
 .trend__militare {
 	& .trend__small {
 		margin-left: 0;
-		margin-right: 10px;
+
 	}
 }
 
 .trend__small-card {
 	position: relative;
-	margin: 0 auto;
-	width: 290px;
+	margin-right: 10px;
+	max-width: 290px;
+	width: 100%;
+
+	& img {
+		width: 100%;
+	}
 
 	& p {
 		font-family: 'Montserrat', sans-serif;

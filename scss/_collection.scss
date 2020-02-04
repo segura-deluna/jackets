@@ -9,21 +9,23 @@
 
 .coll__card {
 	width: 100%;
+	max-width: 390px;
 	position: relative;
 	text-align: center;
 
 	& img {
 		width: 100%;
-		max-width: 390px;
+
 	}
 
 }
 
 .coll__card-text {
 	position: absolute;
+	width: 100%;
 	left: 0;
 	right: 0;
-	bottom: 50px;
+	bottom: 10%;
 	color: #ffffff;
 	font-family: 'Montserrat', sans-serif;
 }
