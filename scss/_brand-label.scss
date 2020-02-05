@@ -1,0 +1,18 @@
+// main: main.scss
+
+.brand-label {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	background-color: $brand-bg;
+	padding: 30px 35px;
+	margin-top: 25px;
+}
+
+.brand-label__text {
+	max-width: 620px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	color: $brand-text;
+}

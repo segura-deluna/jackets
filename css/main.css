@@ -1288,6 +1288,11 @@ li {
   padding: 10px;
 }
 
+.showcase {
+  max-width: 925px;
+  width: 100%;
+}
+
 .showcase-sort {
   padding: 23px 0;
   font-family: 'Montserrat', sans-serif;
@@ -1328,9 +1333,15 @@ li {
   border: none;
   border-radius: 3px;
   padding: 5px 10px;
+  margin-left: 10px;
+}
+
+.showcase__items {
+  padding-right: 10px;
 }
 
 .showcase__row {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1338,10 +1349,32 @@ li {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 40px;
+  width: 100%;
 }
 
 .showcase__row .slider-new__item {
-  margin-left: 15px;
+  margin-left: 12px;
+}
+
+.brand-label {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #f8f8f8;
+  padding: 30px 35px;
+  margin-top: 25px;
+}
+
+.brand-label__text {
+  max-width: 620px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #545352;
 }
 
 @media (max-width: 1240px) {

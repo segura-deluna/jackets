@@ -3,6 +3,11 @@
 
 // Showcase =================
 
+.showcase {
+	max-width: 925px;
+	width: 100%;
+}
+
 
 .showcase-sort {
 	padding: 23px 0;
@@ -42,16 +47,24 @@
 	border: none;
 	border-radius: 3px;
 	padding: 5px 10px;
+	margin-left: 10px;
 }
 
 
 
+.showcase__items {
+	padding-right: 10px;
+}
+
+
 .showcase__row {
+	position: relative;
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 40px;
+	width: 100%;
 
 	& .slider-new__item {
-		margin-left: 15px;
+		margin-left: 12px;
 	}
 }
