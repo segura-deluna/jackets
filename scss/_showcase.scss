@@ -1,0 +1,57 @@
+// main: main.scss
+
+
+// Showcase =================
+
+
+.showcase-sort {
+	padding: 23px 0;
+	font-family: 'Montserrat',
+		sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	color: $descr;
+}
+
+.showcase-sort__list,
+.showcase-sort {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.showcase-sort__list {
+
+	& a {
+		display: inline-block;
+		text-decoration: none;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 14px;
+		color: $dark-gray;
+		margin-left: 20px;
+	}
+
+	& a:hover {
+		color: $red-link;
+	}
+}
+
+.showcase-sort__select {
+	background-color: $dark-gray;
+	color: $black;
+	border: none;
+	border-radius: 3px;
+	padding: 5px 10px;
+}
+
+
+
+.showcase__row {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;
+
+	& .slider-new__item {
+		margin-left: 15px;
+	}
+}
