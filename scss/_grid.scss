@@ -35,3 +35,8 @@ li {
 	margin: 0 auto;
 	position: relative;
 }
+
+.page-wrapper {
+	display: flex;
+	justify-content: space-between;
+}

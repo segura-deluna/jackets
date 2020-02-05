@@ -89,145 +89,271 @@
 	<main>
 		<div class="container">
 
-			<aside class="filter-size">
+			<div class="page-wrapper">
+				<aside class="filter-size">
 
-				<h1>Для женщин</h1>
+					<h1>Для женщин</h1>
 
-				<div class="filter-size__wrap">
-					<div class="for-brand">
-						<div class="for-brand__title">
-							<h3>По брендам</h3>
+					<div class="filter-size__wrap">
+						<div class="for-brand">
+							<div class="for-brand__title">
+								<h3>По брендам</h3>
+							</div>
+							<ul class="for-brand__list">
+								<li class="check__brand">
+									<input class="check__input" id="all" type="checkbox">
+									<label class="check__label" for="all">Все</label>
+								</li>
+								<li class="check__brand">
+									<input class="check__input" id="aero" type="checkbox">
+									<label class="check__label" for="aero">Aeronautica militare</label>
+								</li>
+								<li class="check__brand">
+									<input class="check__input" id="canada" type="checkbox">
+									<label class="check__label" for="canada">Canadian</label>
+								</li>
+								<li class="check__brand">
+									<input class="check__input" id="parajump" type="checkbox">
+									<label class="check__label" for="parajump">Parajumpers</label>
+								</li>
+								<li class="check__brand">
+									<input class="check__input" id="wool" type="checkbox">
+									<label class="check__label" for="wool">Woolrich</label>
+								</li>
+								<li class="check__brand">
+									<input class="check__input" id="barb" type="checkbox">
+									<label class="check__label" for="barb">Barbour</label>
+								</li>
+							</ul>
 						</div>
-						<ul class="for-brand__list">
-							<li class="check__brand">
-								<input class="check__input" id="all" type="checkbox">
-								<label class="check__label" for="all">Все</label>
-							</li>
-							<li class="check__brand">
-								<input class="check__input" id="aero" type="checkbox">
-								<label class="check__label" for="aero">Aeronautica militare</label>
-							</li>
-							<li class="check__brand">
-								<input class="check__input" id="canada" type="checkbox">
-								<label class="check__label" for="canada">Canadian</label>
-							</li>
-							<li class="check__brand">
-								<input class="check__input" id="parajump" type="checkbox">
-								<label class="check__label" for="parajump">Parajumpers</label>
-							</li>
-							<li class="check__brand">
-								<input class="check__input" id="wool" type="checkbox">
-								<label class="check__label" for="wool">Woolrich</label>
-							</li>
-							<li class="check__brand">
-								<input class="check__input" id="barb" type="checkbox">
-								<label class="check__label" for="barb">Barbour</label>
-							</li>
-						</ul>
-					</div>
-					<!-- /.for-brand -->
+						<!-- /.for-brand -->
 
-					<div class="for-price">
-						<h3>Цена</h3>
-						<div class="for-price__rang">
-							<input type="text" class="js-range-slider" id="demo_3" name="my_range" value="" />
-						</div>
-					</div>
-					<!-- /.for-price -->
-
-					<div class="for-size">
-						<h3>Размер</h3>
-						<div class="for-size__palett">
-							<div class="for-size__list">
-								<ul class="for-size__list-up">
-									<li class="check__size">
-										<input class="check__input" id="s" type="checkbox">
-										<label class="check__label" for="s">S</label>
-									</li>
-									<li class="check__size">
-										<input class="check__input" id="m" type="checkbox">
-										<label class="check__label" for="m">M</label>
-									</li>
-									<li class="check__size">
-										<input class="check__input" id="l" type="checkbox">
-										<label class="check__label" for="l">L</label>
-									</li>
-								</ul>
-								<ul class="for-size__list-down">
-									<li class="check__size">
-										<input class="check__input" id="xl" type="checkbox">
-										<label class="check__label" for="xl">XL</label>
-									</li>
-									<li class="check__size">
-										<input class="check__input" id="xs" type="checkbox">
-										<label class="check__label" for="xs">XS</label>
-									</li>
-									<li class="check__size">
-										<input class="check__input" id="xl2" type="checkbox">
-										<label class="check__label" for="xl2">2XL</label>
-									</li>
-								</ul>
+						<div class="for-price">
+							<h3>Цена</h3>
+							<div class="for-price__rang">
+								<input type="text" class="js-range-slider" id="demo_3" name="my_range" value="" />
 							</div>
 						</div>
-					</div>
-					<!-- /.for-size -->
+						<!-- /.for-price -->
 
-					<div class="for-color">
-						<h3>Цвет</h3>
-						<div class="for-color__palett">
-							<div class="for-color__line-up">
-								<div class="for-color__choice">
-									<input type="checkbox" id="black" class="for-color__check">
-									<label for="black" class="for-color__label black"></label>
-								</div>
-								<div class="for-color__choice">
-									<input type="checkbox" id="white" class="for-color__check">
-									<label for="white" class="for-color__label white"></label>
-								</div>
-								<div class="for-color__choice">
-									<input type="checkbox" id="red" class="for-color__check">
-									<label for="red" class="for-color__label red"></label>
-								</div>
-								<div class="for-color__choice">
-									<input type="checkbox" id="blue" class="for-color__check">
-									<label for="blue" class="for-color__label blue"></label>
-								</div>
-								<div class="for-color__choice">
-									<input type="checkbox" id="green" class="for-color__check">
-									<label for="green" class="for-color__label green"></label>
-								</div>
-							</div>
-							<div class="for-color__line-down">
-								<div class="for-color__choice">
-									<input type="checkbox" id="gray" class="for-color__check">
-									<label for="gray" class="for-color__label gray"></label>
-								</div>
-								<div class="for-color__choice">
-									<input type="checkbox" id="azure" class="for-color__check">
-									<label for="azure" class="for-color__label azure"></label>
-								</div>
-								<div class="for-color__choice">
-									<input type="checkbox" id="brown" class="for-color__check">
-									<label for="brown" class="for-color__label brown"></label>
-								</div>
-								<div class="for-color__choice">
-									<input type="checkbox" id="orange" class="for-color__check">
-									<label for="orange" class="for-color__label orange"></label>
-								</div>
-								<div class="for-color__choice">
-									<input type="checkbox" id="yellow" class="for-color__check">
-									<label for="yellow" class="for-color__label yellow"></label>
+						<div class="for-size">
+							<h3>Размер</h3>
+							<div class="for-size__palett">
+								<div class="for-size__list">
+									<ul class="for-size__list-up">
+										<li class="check__size">
+											<input class="check__input" id="s" type="checkbox">
+											<label class="check__label" for="s">S</label>
+										</li>
+										<li class="check__size">
+											<input class="check__input" id="m" type="checkbox">
+											<label class="check__label" for="m">M</label>
+										</li>
+										<li class="check__size">
+											<input class="check__input" id="l" type="checkbox">
+											<label class="check__label" for="l">L</label>
+										</li>
+									</ul>
+									<ul class="for-size__list-down">
+										<li class="check__size">
+											<input class="check__input" id="xl" type="checkbox">
+											<label class="check__label" for="xl">XL</label>
+										</li>
+										<li class="check__size">
+											<input class="check__input" id="xs" type="checkbox">
+											<label class="check__label" for="xs">XS</label>
+										</li>
+										<li class="check__size">
+											<input class="check__input" id="xl2" type="checkbox">
+											<label class="check__label" for="xl2">2XL</label>
+										</li>
+									</ul>
 								</div>
 							</div>
 						</div>
+						<!-- /.for-size -->
+
+						<div class="for-color">
+							<h3>Цвет</h3>
+							<div class="for-color__palett">
+								<div class="for-color__line-up">
+									<div class="for-color__choice">
+										<input type="checkbox" id="black" class="for-color__check">
+										<label for="black" class="for-color__label black"></label>
+									</div>
+									<div class="for-color__choice">
+										<input type="checkbox" id="white" class="for-color__check">
+										<label for="white" class="for-color__label white"></label>
+									</div>
+									<div class="for-color__choice">
+										<input type="checkbox" id="red" class="for-color__check">
+										<label for="red" class="for-color__label red"></label>
+									</div>
+									<div class="for-color__choice">
+										<input type="checkbox" id="blue" class="for-color__check">
+										<label for="blue" class="for-color__label blue"></label>
+									</div>
+									<div class="for-color__choice">
+										<input type="checkbox" id="green" class="for-color__check">
+										<label for="green" class="for-color__label green"></label>
+									</div>
+								</div>
+								<div class="for-color__line-down">
+									<div class="for-color__choice">
+										<input type="checkbox" id="gray" class="for-color__check">
+										<label for="gray" class="for-color__label gray"></label>
+									</div>
+									<div class="for-color__choice">
+										<input type="checkbox" id="azure" class="for-color__check">
+										<label for="azure" class="for-color__label azure"></label>
+									</div>
+									<div class="for-color__choice">
+										<input type="checkbox" id="brown" class="for-color__check">
+										<label for="brown" class="for-color__label brown"></label>
+									</div>
+									<div class="for-color__choice">
+										<input type="checkbox" id="orange" class="for-color__check">
+										<label for="orange" class="for-color__label orange"></label>
+									</div>
+									<div class="for-color__choice">
+										<input type="checkbox" id="yellow" class="for-color__check">
+										<label for="yellow" class="for-color__label yellow"></label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /.for-color -->
+
+						<button class="filter-size__button">Сбросить фильтр</button>
+
 					</div>
-					<!-- /.for-color -->
+					<!-- /.filter-size__wrap -->
+				</aside>
 
-					<button class="filter-size__button">Сбросить фильтр</button>
+				<div class="showcase">
+					<div class="showcase-sort">
+						<div class="showcase-sort__list">
+							Сортировать:
+							<nav>
+								<a href="#">Сначала новые</a>
+								<a href="#">Сначала популярные</a>
+								<a href="#">Цена меньше</a>
+								<a href="#">Цена больше</a>
+							</nav>
+						</div>
+						<div class="showcase-sort__num">
+							Показать по:
+							<select name="list" id="showcase" class="showcase-sort__select">
+								<option value="">12</option>
+								<option value="">24</option>
+								<option value="">48</option>
+							</select>
+						</div>
+					</div>
+					<!-- /.showcase-sort -->
 
+					<div class="showcase__items">
+						<div class="showcase__row">
+							<div class="slider-new__item">
+								<div class="slider-new__card">
+									<img src="img/new-1.png" alt="">
+									<p>Куртка утепленная Aeronautica Militare</p>
+									<span>26 250 ₽</span>
+								</div>
+							</div>
+							<div class="slider-new__item">
+								<div class="slider-new__card">
+									<img src="img/new-2.png" alt="">
+									<p>Куртка barbour</p>
+									<span>20 150 ₽</span>
+								</div>
+							</div>
+
+							<div class="slider-new__item">
+								<div class="slider-new__card">
+									<img src="img/new-3.png" alt="">
+									<p>Куртка emporio armani ea7</p>
+									<span>18 850 ₽</span>
+								</div>
+							</div>
+						</div>
+						<div class="showcase__row">
+							<div class="slider-new__item">
+								<div class="slider-new__card">
+									<img src="img/new-1.png" alt="">
+									<p>Куртка утепленная Aeronautica Militare</p>
+									<span>26 250 ₽</span>
+								</div>
+							</div>
+							<div class="slider-new__item">
+								<div class="slider-new__card">
+									<img src="img/new-2.png" alt="">
+									<p>Куртка barbour</p>
+									<span>20 150 ₽</span>
+								</div>
+							</div>
+
+							<div class="slider-new__item">
+								<div class="slider-new__card">
+									<img src="img/new-3.png" alt="">
+									<p>Куртка emporio armani ea7</p>
+									<span>18 850 ₽</span>
+								</div>
+							</div>
+						</div>
+						<div class="showcase__row">
+							<div class="slider-new__item">
+								<div class="slider-new__card">
+									<img src="img/new-1.png" alt="">
+									<p>Куртка утепленная Aeronautica Militare</p>
+									<span>26 250 ₽</span>
+								</div>
+							</div>
+							<div class="slider-new__item">
+								<div class="slider-new__card">
+									<img src="img/new-2.png" alt="">
+									<p>Куртка barbour</p>
+									<span>20 150 ₽</span>
+								</div>
+							</div>
+
+							<div class="slider-new__item">
+								<div class="slider-new__card">
+									<img src="img/new-3.png" alt="">
+									<p>Куртка emporio armani ea7</p>
+									<span>18 850 ₽</span>
+								</div>
+							</div>
+						</div>
+						<div class="showcase__row">
+							<div class="slider-new__item">
+								<div class="slider-new__card">
+									<img src="img/new-1.png" alt="">
+									<p>Куртка утепленная Aeronautica Militare</p>
+									<span>26 250 ₽</span>
+								</div>
+							</div>
+							<div class="slider-new__item">
+								<div class="slider-new__card">
+									<img src="img/new-2.png" alt="">
+									<p>Куртка barbour</p>
+									<span>20 150 ₽</span>
+								</div>
+							</div>
+
+							<div class="slider-new__item">
+								<div class="slider-new__card">
+									<img src="img/new-3.png" alt="">
+									<p>Куртка emporio armani ea7</p>
+									<span>18 850 ₽</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /.showcase__items -->
 				</div>
-				<!-- /.filter-size__wrap -->
-			</aside>
+				<!-- /.showcase -->
+			</div>
 
 		</div>
 	</main>
