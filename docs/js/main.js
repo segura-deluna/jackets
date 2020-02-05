@@ -148,4 +148,16 @@ $(document).ready(function () {
 		nav.toggleClass('show');
 	});
 
+	// RangeSlider
+	$("#demo_3").ionRangeSlider({
+		type: "double",
+		min: 0,
+		max: 1000,
+		from: 400,
+		to: 600,
+		drag_interval: true,
+		min_interval: null,
+		max_interval: null
+	});
+
 });
