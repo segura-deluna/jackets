@@ -1289,9 +1289,9 @@ li {
 }
 
 .showcase-sort {
-  padding: 25px 0;
+  padding: 23px 0;
   font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
   color: #3d3d3d;
 }
@@ -1313,7 +1313,7 @@ li {
   display: inline-block;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   color: #cccaca;
   margin-left: 20px;
 }
