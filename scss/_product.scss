@@ -11,8 +11,46 @@
 .product-slider {
 	width: 540px;
 	height: 575px;
-	background-color: $brand-bg;
+	position: relative;
+
+	& .slider-nav {
+		position: absolute;
+		top: -50px;
+		left: 0;
+	}
+
+	& .slider-for {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
 }
+
+.product-slider__arrows {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 150;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	background-color: rgba($color: #fff, $alpha: .8);
+	border-radius: 50%;
+	cursor: pointer;
+
+	& img {
+		width: 16px;
+		height: 16px;
+	}
+}
+
+.product-slider__prev {
+	right: 60px;
+}
+
+
 
 .product-item {
 	& h2 {
