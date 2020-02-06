@@ -1,0 +1,68 @@
+// main: main.scss
+
+.pay {
+	font-family: 'Montserrat', sans-serif;
+
+	& h2 {
+		font-size: 30px;
+		font-weight: 500;
+		color: #000000;
+		margin-bottom: 0;
+	}
+}
+
+.pay__wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.pay__item {
+	width: 100%;
+	max-width: 605px;
+
+}
+
+.pay__card {
+	height: 195px;
+	border: 1px solid $gray;
+	border-radius: 4px;
+	padding: 30px 30px 40px;
+	margin: 40px 0;
+
+	& h3 {
+		font-size: 20px;
+		font-weight: 500;
+		color: #000000;
+		margin: 0;
+	}
+
+	& p {
+		font-size: 13px;
+		line-height: 20px;
+
+		& span {
+			font-weight: 700;
+		}
+	}
+}
+
+.pay__card--wallet {
+	height: 160px;
+}
+
+.pay__card-head {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+.pay__card-subhead {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pay__card-icon {
+	margin-right: 20px;
+}

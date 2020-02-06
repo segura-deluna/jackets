@@ -1593,12 +1593,10 @@ li {
 }
 
 .size-button_pay {
-  cursor: pointer;
   width: 195px;
   height: 60px;
   border-radius: 3px;
   background-color: #191919;
-  color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1608,11 +1606,16 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 10px;
+}
+
+.size-button_pay a {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
-  margin-right: 10px;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .size-button_like {
@@ -1634,6 +1637,88 @@ li {
 .size-button_like img {
   width: 40px;
   height: 40px;
+}
+
+.pay {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.pay h2 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 0;
+}
+
+.pay__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pay__item {
+  width: 100%;
+  max-width: 605px;
+}
+
+.pay__card {
+  height: 195px;
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+  padding: 30px 30px 40px;
+  margin: 40px 0;
+}
+
+.pay__card h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000000;
+  margin: 0;
+}
+
+.pay__card p {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.pay__card p span {
+  font-weight: 700;
+}
+
+.pay__card--wallet {
+  height: 160px;
+}
+
+.pay__card-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+.pay__card-subhead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pay__card-icon {
+  margin-right: 20px;
 }
 
 @media (max-width: 1240px) {

@@ -166,21 +166,24 @@
 }
 
 .size-button_pay {
-	cursor: pointer;
 	width: 195px;
 	height: 60px;
 	border-radius: 3px;
 	background-color: $black;
-	color: #ffffff;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-family: 'Montserrat',
-		sans-serif;
-	font-weight: 700;
-	font-size: 14px;
-	text-transform: uppercase;
 	margin-right: 10px;
+
+	& a {
+		font-family: 'Montserrat',
+			sans-serif;
+		font-weight: 700;
+		font-size: 14px;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: #ffffff;
+	}
 }
 
 .size-button_like {
