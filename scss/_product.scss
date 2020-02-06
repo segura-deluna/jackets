@@ -1,0 +1,199 @@
+// main: main.scss
+
+.product {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 75px;
+	margin: 50px 0;
+	border-bottom: 1px solid $line-gray;
+}
+
+.product-slider {
+	width: 540px;
+	height: 575px;
+	background-color: $brand-bg;
+}
+
+.product-item {
+	& h2 {
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 500;
+		font-size: 27px;
+		color: #000000;
+		margin: 0 0 40px;
+	}
+}
+
+.product-item__price {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 28px;
+	color: #000000;
+
+	& del {
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 500;
+		font-size: 18px;
+		color: $del-gray;
+	}
+}
+
+.product-item__size-tab {
+	cursor: pointer;
+	border-radius: 3px;
+	background-color: $dark-button;
+	width: 160px;
+	height: 30px;
+	font-family: 'Montserrat',
+		sans-serif;
+	font-weight: 500;
+	font-size: 12px;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 35px 0 35px;
+}
+
+.product-item__size-rang {
+	display: flex;
+	justify-content: flex-start;
+	margin-bottom: 20px;
+}
+
+.product-item__size-item {
+	width: 60px;
+	height: 40px;
+	border-radius: 3px;
+	background-color: $line-gray;
+	color: $black;
+	font-family: 'Montserrat',
+		sans-serif;
+	font-weight: 500;
+	font-size: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 10px;
+}
+
+.current {
+	background-color: $red-link;
+	color: #fff;
+}
+
+.product-item__size-descr {
+	& h3 {
+		font-family: 'Montserrat',
+			sans-serif;
+		font-weight: 700;
+		font-size: 14px;
+		text-transform: uppercase;
+		color: $descr;
+	}
+
+	& p {
+		width: 100%;
+		max-width: 660px;
+		font-family: 'Montserrat',
+			sans-serif;
+		font-weight: 400;
+		font-size: 14px;
+		color: $descr;
+	}
+}
+
+.product-item__size-data {
+	width: 100%;
+	max-width: 660px;
+	height: 90px;
+	background-color: $brand-bg;
+	font-family: 'Montserrat',
+		sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	color: $black;
+	margin: 25px 0;
+	padding: 20px;
+	display: flex;
+}
+
+.size-data_left {
+	width: 45%;
+	display: flex;
+}
+
+.size-data_bold {
+	font-weight: 700;
+	text-transform: uppercase;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.size-data_thin {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-left: 30px;
+}
+
+.size-data_right {
+	width: 55%;
+	display: flex;
+}
+
+.product-item__size-button {
+	display: flex;
+}
+
+.size-button_basket {
+	cursor: pointer;
+	width: 260px;
+	height: 60px;
+	border-radius: 3px;
+	background-color: $red-link;
+	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Montserrat',
+		sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-right: 10px;
+}
+
+.size-button_pay {
+	cursor: pointer;
+	width: 195px;
+	height: 60px;
+	border-radius: 3px;
+	background-color: $black;
+	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Montserrat',
+		sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-right: 10px;
+}
+
+.size-button_like {
+	width: 60px;
+	height: 60px;
+	border-radius: 3px;
+	background-color: $black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	& img {
+		width: 40px;
+		height: 40px;
+	}
+}
