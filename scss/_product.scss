@@ -53,6 +53,7 @@
 
 
 .product-item {
+
 	& h2 {
 		font-family: 'Montserrat', sans-serif;
 		font-weight: 500;
@@ -145,6 +146,7 @@
 	width: 100%;
 	max-width: 660px;
 	height: 90px;
+	display: flex;
 	background-color: $brand-bg;
 	font-family: 'Montserrat',
 		sans-serif;
@@ -153,11 +155,15 @@
 	color: $black;
 	margin: 25px 0;
 	padding: 20px;
-	display: flex;
 }
 
 .size-data_left {
 	width: 45%;
+	display: flex;
+}
+
+.size-data_right {
+	width: 55%;
 	display: flex;
 }
 
@@ -176,13 +182,12 @@
 	margin-left: 30px;
 }
 
-.size-data_right {
-	width: 55%;
-	display: flex;
-}
+
 
 .product-item__size-button {
 	display: flex;
+	width: 100%;
+	max-width: 540px;
 }
 
 .size-button_basket {
