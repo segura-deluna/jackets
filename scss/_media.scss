@@ -3,13 +3,122 @@
 	.container {
 		padding: 0 15px;
 	}
+
+	.page-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 auto;
+
+	}
+
+
 }
 
 
 @media (max-width: 1230px) {
 
+
 	.coll__card {
 		margin: 0 10px;
+	}
+
+	.contacts {
+		& h2 {
+			width: 150px;
+			margin: 20px auto 50px;
+		}
+	}
+
+	.contacts__wrap {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.contacts__map {
+		width: 100%;
+		max-width: 960px;
+		display: flex;
+		justify-content: center;
+	}
+
+	.contacts__form {
+		& h2 {
+			margin: 50px auto;
+		}
+	}
+
+	.contacts__form-input {
+		flex-wrap: wrap;
+	}
+
+	.contacts__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		& .footer__addr,
+		.footer__call,
+		.footer__mail,
+		.footer__work,
+		.footer__social {
+			margin: 0 15px 15px;
+		}
+	}
+
+	.filter-size {
+		margin: 0 auto;
+		text-align: center;
+
+		& h1 {
+			min-width: 100px;
+			margin: 30px auto;
+		}
+
+		& button {
+			margin: 30px;
+		}
+	}
+
+	.filter-size__wrap {
+		width: 700px;
+		display: flex;
+	}
+
+	.for-size__wrap-item {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+
+	.for-brand,
+	.for-price,
+	.for-size,
+	.for-color {
+		margin: 0 15px;
+	}
+
+	.for-size,
+	.for-color {
+		padding-top: 0;
+	}
+
+	.showcase {
+		margin: 0 auto;
+	}
+
+	.pay {
+		text-align: center;
+	}
+
+	.pay__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		& .pay__card--wallet {
+			margin-bottom: 0;
+		}
 	}
 }
 
@@ -137,6 +246,46 @@
 			font-size: 3em;
 		}
 	}
+
+	.contacts__form-input {
+		justify-content: center;
+
+		& input {
+			margin: 0 15px 15px;
+		}
+	}
+
+	// Woman =========
+
+	.for-size__wrap {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.showcase-sort {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.showcase-sort__num {
+		margin-top: 20px;
+	}
+
+	.showcase__items {
+		& .showcase__row {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+
+			& .slider-new__item {
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	.brand-label__logo {
+		margin-left: 30px;
+	}
 }
 
 
@@ -148,6 +297,11 @@
 		& h2 {
 			font-size: 2.8em;
 		}
+	}
+
+	.showcase-sort {
+		flex-wrap: wrap;
+
 	}
 }
 
@@ -179,6 +333,21 @@
 	.subscribe {
 		height: 450px;
 	}
+
+	.showcase-sort__list {
+
+		flex-direction: column;
+		justify-content: center;
+
+		& nav {
+			margin-top: 10px;
+			text-align: center;
+
+			& a {
+				margin-top: 20px;
+			}
+		}
+	}
 }
 
 
@@ -191,6 +360,11 @@
 
 	.coll__card {
 		margin-bottom: 20px;
+	}
+
+	.for-size__wrap {
+		display: flex;
+		flex-wrap: wrap;
 	}
 }
 
@@ -231,6 +405,30 @@
 	.footer__police a {
 		font-size: 12px;
 	}
+
+	.filter-size__wrap {
+		flex-wrap: wrap;
+		flex-direction: column;
+		max-width: 280px;
+		margin: 0 auto;
+	}
+
+	.for-size__wrap-item {
+		max-width: 280px;
+		margin: 0 auto;
+	}
+
+	.brand-label {
+		flex-direction: column;
+
+		& .brand-label__text {
+			order: 1;
+		}
+
+		& .brand-label__logo {
+			margin: 0 auto 20px;
+		}
+	}
 }
 
 
@@ -261,6 +459,27 @@
 
 	.slider-news h2 {
 		margin: 0 0 50px 30%;
+	}
+
+	.pay__card {
+		height: auto;
+	}
+
+	.pay__card-head {
+		flex-direction: column;
+	}
+
+	.pay__card-logo {
+		margin-top: 20px;
+	}
+
+	.pay__card-subhead {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.pay__card-icon {
+		margin: 0 auto;
 	}
 }
 
