@@ -1,6 +1,48 @@
 $(document).ready(function () {
 	"use strict";
 
+	// Modal header ==========
+
+	var popupsToggle = document.querySelectorAll('.open-popup');
+
+	var popupClose = document.querySelectorAll('.close');
+
+
+	popupsToggle.forEach(function (item) {
+		item.addEventListener('click', function () {
+			var popupName = item.getAttribute('data-popup');
+			document.getElementById(popupName).style.display = 'block';
+		})
+	})
+
+	popupClose.forEach(function (item) {
+		item.addEventListener('click', function () {
+			var popup = item.closest('.modal');
+			popup.style.display = 'none';
+		})
+	})
+
+	window.onclick = function (e) {
+		if (e.target.classList.contains('modal')) {
+			e.target.style.display = 'none';
+		}
+	}
+
+
+	// Fixed header ==========
+
+	$(window).scroll(function (event) {
+		if ($(window).scrollTop() > 200) {
+			$('.new-header').addClass('clone');
+		} else {
+			$('.new-header').removeClass('clone');
+		}
+	});
+
+
+
+	// SLIDERS ================
+
 	$('.slider-top').slick({
 		infinite: true,
 		slidesToShow: 1,
@@ -126,8 +168,7 @@ $(document).ready(function () {
 				breakpoint: 639,
 				settings: {
 					slidesToShow: 1,
-					slidesToScroll: 1,
-					arrows: false
+					slidesToScroll: 1
 				}
 			},
 			{
@@ -165,14 +206,7 @@ $(document).ready(function () {
 	});
 
 
-	// Mobile Nav
-	const navToggle = $('#navToggle');
-	const nav = $('#nav');
 
-	navToggle.on('click', function (event) {
-		event.preventDefault();
-		nav.toggleClass('show');
-	});
 
 
 	// RangeSlider

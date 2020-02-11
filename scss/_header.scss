@@ -136,7 +136,6 @@
 	}
 }
 
-
 .counter {
 	position: absolute;
 	top: -2px;
@@ -155,15 +154,15 @@
 }
 
 
-.header-menu {
-	display: none;
-}
-
 .header-nav {
 	display: flex;
 	justify-content: space-between;
 	padding: 20px 0;
 	border-bottom: 1px solid $gray;
+
+	& span {
+		display: none;
+	}
 
 	& a {
 		text-decoration: none;
@@ -172,4 +171,134 @@
 		font-size: 14px;
 		color: $black;
 	}
+}
+
+
+
+// New-Header ================
+
+.new-header {
+	position: fixed;
+	top: -100%;
+	background-color: #ffffff;
+
+	&.clone {
+		width: 100%;
+		max-width: 1240px;
+		top: 0;
+		z-index: 100;
+
+		& .header__logo {
+			& a {
+				display: inline-block;
+				margin-bottom: 10px;
+			}
+		}
+
+		& .header__contacts {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			max-width: 570px;
+			width: 100%;
+		}
+
+		& .header-menu {
+			margin-left: 0;
+		}
+
+		& .header__call {
+			min-width: 150px;
+
+			& a {
+				font-family: 'Montserrat', sans-serif;
+				font-weight: 500;
+				font-size: 12px;
+				color: $red-link;
+				margin-top: 10px;
+			}
+		}
+	}
+}
+
+
+// Modal ====================
+
+.open-popup {
+	background-color: #699;
+	color: white;
+	padding: 12px 20px;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	border: none;
+	cursor: pointer;
+	width: 180px;
+}
+
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 100;
+	padding-top: 10px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.modal-content {
+	position: relative;
+	background-color: #fff;
+	margin: auto;
+	padding: 10px;
+	width: 90%;
+	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+	animation-name: animatefade;
+	animation-duration: .5s;
+}
+
+.header-modal {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	& a {
+		text-decoration: none;
+		padding: 10px 0;
+		text-decoration: none;
+		font-family: 'Montserrat',
+			sans-serif;
+		text-transform: uppercase;
+		font-size: 14px;
+		color: $black;
+	}
+}
+
+
+
+@keyframes animatefade {
+	from {
+		opacity: 0
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
+
+.close {
+	cursor: pointer;
+	position: absolute;
+	display: block;
+	color: $black;
+	top: 4px;
+	right: 20px;
+	font-size: 40px;
+	font-weight: bold;
 }

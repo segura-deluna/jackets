@@ -2,21 +2,34 @@
 @media (max-width: 1240px) {
 	.container {
 		padding: 0 15px;
+
+		& .header__wrap {
+			width: 100%;
+			max-width: 1200px;
+		}
 	}
 
 	.page-wrapper {
 		display: flex;
 		flex-wrap: wrap;
 		margin: 0 auto;
-
 	}
-
 
 }
 
 
 @media (max-width: 1230px) {
 
+	.new-header {
+		& .header__wrap {
+			flex-wrap: wrap;
+			justify-content: center;
+
+			& .header__search {
+				margin-top: 20px;
+			}
+		}
+	}
 
 	.coll__card {
 		margin: 0 10px;
@@ -257,6 +270,7 @@
 
 
 @media (max-width: 960px) {
+
 	.header-nav {
 		display: none;
 		background-color: #fff;
@@ -265,13 +279,6 @@
 		& a {
 			width: 100%;
 			margin: 10px auto;
-		}
-
-		&.show {
-			display: flex;
-			flex-wrap: wrap;
-			position: absolute;
-			z-index: 10;
 		}
 	}
 
@@ -383,7 +390,9 @@
 }
 
 
+
 @media (max-width: 720px) {
+
 
 	.subscribe {
 		height: 450px;
@@ -435,14 +444,24 @@
 
 
 @media (max-width: 638px) {
+
+	.new-header {
+		&.clone {
+			& .header__wrap {
+				& .header__contacts {
+					margin: 0 auto;
+				}
+			}
+
+		}
+	}
+
 	.slider-new {
 		width: 80%;
 		margin: 0 auto;
 
-		& .slider-new__arrows,
-		.slider-new__prev,
-		.slider-new__next {
-			display: none;
+		& .slider-new__prev {
+			right: 45px;
 		}
 	}
 
@@ -513,6 +532,26 @@
 		justify-content: space-around;
 	}
 
+	.new-header {
+		&.clone {
+			& .header__wrap {
+				& .header__contacts {
+					max-width: 270px;
+
+					& .header__adr {
+						display: none;
+					}
+				}
+
+				& .header__search {
+					& .header__call {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+
 	.slider-top__item-text {
 		position: relative;
 		left: 0;
@@ -535,21 +574,7 @@
 		margin: 0 0 50px 30%;
 	}
 
-	// .product-slider {
-	// 	width: 100%;
-	// 	max-width: 540px;
 
-	// 	position: relative;
-
-	// 	& .slider-nav {
-	// 		display: none;
-	// 	}
-
-	// 	& .slider-for {
-	// 		position: absolute;
-	// 		top: 0;
-	// 	}
-	// }
 
 	.product-item__size-rang {
 		flex-wrap: wrap;
@@ -686,6 +711,34 @@
 
 		& a {
 			margin-right: 20px;
+		}
+	}
+
+	// .header-nav {
+	// 	&.show {
+	// 		width: 95%;
+
+	// 	}
+	// }
+
+	.new-header {
+		&.clone {
+			& .header__wrap {
+				width: 92%;
+				max-width: 350px;
+
+				& .header__contacts {
+					max-width: 250px;
+
+					& .header__logo {
+						margin-bottom: 0;
+					}
+				}
+
+				& .header__searh-wrap {
+					justify-content: center;
+				}
+			}
 		}
 	}
 
