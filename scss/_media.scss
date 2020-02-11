@@ -617,6 +617,16 @@
 		margin-left: 25px;
 	}
 
+	.new-header {
+		& .header__wrap {
+			padding: 10px 0;
+
+			& .header__search {
+				display: none;
+			}
+		}
+	}
+
 	.slider-news h2 {
 		margin: 0 auto 40px;
 	}
