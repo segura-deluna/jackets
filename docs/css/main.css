@@ -296,6 +296,8 @@ li {
   max-width: 1240px;
   margin: 0 auto;
   border-bottom: none;
+  -webkit-box-shadow: 0px 20px 40px rgba(25, 25, 25, 0.1);
+          box-shadow: 0px 20px 40px rgba(25, 25, 25, 0.1);
 }
 
 .new-header.clone .header__wrap .header__logo a {
